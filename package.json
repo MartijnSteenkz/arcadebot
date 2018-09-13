@@ -1,0 +1,11 @@
+{
+  "name": "arcadebot",
+  "version": "1.0.0",
+  "description": "DGC original bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martijn Steenks",
+  "license": "ISC"
+}
