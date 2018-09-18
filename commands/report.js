@@ -18,7 +18,7 @@ module.exports.run = async (bot, message, args) => {
       .setColor("#fa2a7d")
       .addField("Je report is verzonden", "We zullen zo snel mogelijk terug reageren");
 
-      let reportschannel = message.guild.channels.find(`name`, "ban_mute_reports");
+      let reportschannel = message.guild.channels.find(`name`, "logs");
       if(!reportschannel) return message.channel.send("Couldn't find reports channel.");
       message.channel.send(reportEmbed2);
       message.delete().catch(O_o=>{});
