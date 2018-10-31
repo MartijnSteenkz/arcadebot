@@ -25,7 +25,7 @@ fs.readdir("./commands/", (err, files) => {
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
 
-  bot.user.setActivity("a!help for more info", {type: "WATCHING"});
+  bot.user.setActivity("Loli Breathing 10 Hours", {type: "WATCHING"});
 
   //bot.user.setGame("DGC Original Bot");
 });
