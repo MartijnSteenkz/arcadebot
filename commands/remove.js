@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
 
 let noRoleEmbed = new Discord.RichEmbed()
 .setTitle("❌ Je hebt geen role gekozen")
-.setColor("#af0e97")
+.setColor("#da3681")
 .setFooter("Use h!roles to see all available roles");
 
 if(!args[0]) return message.channel.send(noRoleEmbed);
@@ -12,15 +12,15 @@ let question = args.slice(1).join(" ");
 
 let removeEmbed = new Discord.RichEmbed()
 .setTitle(`✔️ Role verwijderd van ${message.author.tag}`)
-.setColor("#af0e97");
+.setColor("#da3681");
 
 let alreadyEmbed = new Discord.RichEmbed()
 .setTitle("❌ Je hebt de geselecteerde role niet")
-.setColor("#af0e97");
+.setColor("#da3681");
 
 let wrongRoleEmbed = new Discord.RichEmbed()
 .setTitle("❌ Die role bestaat niet")
-.setColor("#af0e97")
+.setColor("#da3681")
 .setFooter("Use h!roles to see all available roles");
 
 let roleCyanColor = message.guild.roles.find(r => r.name === "CyanColor");
