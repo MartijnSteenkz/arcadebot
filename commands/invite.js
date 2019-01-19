@@ -6,12 +6,12 @@ module.exports.run = async (bot, message, args) => {
   .setDescription("Server Invites")
   .setColor("#af0e97")
   .setThumbnail(message.guild.iconURL)
-  .addField("Instant Invite", `https://discord.gg/bZqJN4s`)
-  .addField("DiscordServerList", `https://discord.sl/server/hentaiworld`)
-  .addField("DiscordServers", `https://discord.chat/hentaiworld`)
-  .addField("Discord.Me", `https://discord.me/hentaiworld`)
-  .addField("Discord.IO", `https://discord.io/hentaiworld`)
-  .addField("DiscordList.Me", `https://disco.gg/hentaiworld`)
+  .addField("Instant Invite", `https://discord.gg/xj8VCV2`)
+  .addField("DiscordServerList", `https://discord.sl/server/dutchgaming`)
+  .addField("DiscordServers", `https://discord.chat/dutchgaming`)
+  .addField("Discord.Me", `https://discord.me/dutchgaming`)
+  .addField("Discord.IO", `https://discord.io/dutchgaming`)
+  .addField("DiscordList.Me", `https://disco.gg/dutchgaming`)
   .setFooter(`requested by ${message.author.tag}`, message.author.displayAvatarURL);
   message.channel.send(invEmbed);
 
