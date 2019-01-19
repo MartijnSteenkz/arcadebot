@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
 
   let staffembed = new Discord.RichEmbed()
   .setDescription("Alle Staff members")
-  .setColor("#af0e97")
+  .setColor("#da3681")
   .setThumbnail(message.guild.iconURL)
   .addField("Owner", `<@246693689731186688>`)
   .addField("Admin", `<@218137001155624960> <@180324781172719616>`)
