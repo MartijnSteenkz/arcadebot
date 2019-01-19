@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
 
   let helpCembed = new Discord.RichEmbed()
   .setTitle("Please choose a category")
-  .setColor("#af0e97")
+  .setColor("#da3681")
   .addField("Info", "general information about stuff", true)
   .addField("Fun", "extra things to play around with", true)
   .addField("Others", "extra commands for utility", true)
@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
 
   let infoembed = new Discord.RichEmbed()
   .setDescription("Information Command List")
-  .setColor("#af0e97")
+  .setColor("#da3681")
   .setThumbnail("https://cdn.discordapp.com/attachments/486583639253975042/531130449649467393/2000px-Icon-notepad.svg.png")
   .addField("h!help", "shows a list of all my commands")
   .addField("h!bots", "shows a list of all the bots and prefixes in the Hentai World")
@@ -32,7 +32,7 @@ module.exports.run = async (bot, message, args) => {
 
   let funembed = new Discord.RichEmbed()
   .setDescription("Fun Command List")
-  .setColor("#af0e97")
+  .setColor("#da3681")
   .setThumbnail("https://cdn.discordapp.com/attachments/486583639253975042/531132326638387201/b8316909587b624d18cd4c52b27c653e.png")
   .addField("h!8ball", "ask Hanayuri a question")
   .addField("h!cat", "shows a random cat picture")
@@ -40,13 +40,13 @@ module.exports.run = async (bot, message, args) => {
 
   let othersembed = new Discord.RichEmbed()
   .setDescription("Others Command List")
-  .setColor("#af0e97")
+  .setColor("#da3681")
   .setThumbnail("https://cdn.discordapp.com/attachments/486583639253975042/531133221992398868/854145.png")
   .addField("h!report", "report someone in the server");
 
   let staffhelpembed = new Discord.RichEmbed()
   .setDescription("Staff Command List")
-  .setColor("#af0e97")
+  .setColor("#da3681")
   .setThumbnail("https://cdn.discordapp.com/attachments/486583639253975042/531134577675337748/wrench-512.png")
   .addField("h!say", "let Hanayuri say something")
   .addField("h!clear", "delete an ammount of messages in the chat")
@@ -57,7 +57,7 @@ module.exports.run = async (bot, message, args) => {
 
   let nopermembed = new Discord.RichEmbed()
   .setTitle("You have no business here, peasant!")
-  .setColor("#af0e97");
+  .setColor("#da3681");
 
   if(args[0] === 'info') {
     message.channel.send(infoembed);
