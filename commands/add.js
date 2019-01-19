@@ -420,6 +420,6 @@ if(args[0] === 'level') {
 
 }
 
-module.exports.help = {
-  name: "add"
-}
+//module.exports.help = {
+//  name: "add"
+//}
