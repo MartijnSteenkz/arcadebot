@@ -19,7 +19,7 @@ module.exports.run = async (bot, message, args) => {
   let banChannel = message.guild.channels.find(`name`, "logs");
   if(!banChannel) return message.channel.send("Can't find incidents channel.");
   let banEmbed2 = new Discord.RichEmbed()
-  .setColor("#fa2a7d")
+  .setColor("#da3681")
   .addField("Banned", `${bUser}`)
 
   message.guild.member(bUser).ban(bReason);
