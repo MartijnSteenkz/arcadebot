@@ -11,7 +11,7 @@ module.exports.run = async (bot, message, args) => {
   let banEmbed = new Discord.RichEmbed()
   .setDescription("User Banned")
   .setColor("#7493e4")
-  .addField(`Terminus smashed ${bUser} with his Ban Hammer!`, `Well, he tried to do it. But he bugged out.`)
+  .addField(`Terminus smashed ${bUser.username} with his Ban Hammer!`, `Well, he tried to do it. But he bugged out.`)
   .addField("Reason", bReason)
   .setImage("https://cdn.discordapp.com/attachments/486583639253975042/536615035334819867/ScratchyImpoliteChicken-size_restricted.gif");
   let banChannel = message.guild.channels.find(`name`, "main_chat");
