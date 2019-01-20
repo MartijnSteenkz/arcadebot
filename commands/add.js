@@ -3,25 +3,26 @@ const Discord = require("discord.js");
 module.exports.run = async (bot, message, args) => {
 
 let noRoleEmbed = new Discord.RichEmbed()
-.setTitle("❌ Je hebt geen role gekozen")
+.setTitle("❌ You didn't specify a color")
 .setColor("#da3681")
-.setFooter("Use h!roles to see all available roles");
+.setFooter("Use b!colors to see all available colors");
 
 if(!args[0]) return message.channel.send(noRoleEmbed);
 let question = args.slice(1).join(" ");
 
 let addEmbed = new Discord.RichEmbed()
-.setTitle(`✔️ Role toegevoegd aan ${message.author.tag}`)
+.setTitle(`✔️ Color added to ${message.author.tag}`)
 .setColor("#da3681");
 
 let alreadyEmbed = new Discord.RichEmbed()
-.setTitle("❌ Je hebt al dezelfde role")
+.setTitle("❌ You already have that color")
 .setColor("#da3681");
 
 let wrongRoleEmbed = new Discord.RichEmbed()
-.setTitle("❌ Die role bestaat niet")
+.setTitle("❌ That color doesnt exist")
 .setColor("#da3681")
-.setFooter("Use h!roles to see all available roles");
+.setFooter("Use b!roles to see all available colors");
+
 let roleCyanColor = message.guild.roles.find(r => r.name === "CyanColor");
 let roleDarkGreenColor = message.guild.roles.find(r => r.name === "DarkGreenColor");
 let roleGreenColor = message.guild.roles.find(r => r.name === "GreenColor");
@@ -403,21 +404,6 @@ if(args[0] === 'grey') {
   message.channel.send(addEmbed);
   memberRoleAdd.addRole(roleGreyColor).catch(console.error);
 }
-if(args[0] === 'Level') {
-  if (!args[1]) return;
-  if (args[1] === 'Block') {
-  if(memberRoleAdd.roles.has(roleLevelBlock.id)) return message.channel.send(alreadyEmbed);
-  message.channel.send(addEmbed);
-  memberRoleAdd.addRole(roleLevelBlock).catch(console.error);
-}}
-if(args[0] === 'level') {
-  if (!args[1]) return;
-  if (args[1] === 'block') {
-  if(memberRoleAdd.roles.has(roleLevelBlock.id)) return message.channel.send(alreadyEmbed);
-  message.channel.send(addEmbed);
-  memberRoleAdd.addRole(roleLevelBlock).catch(console.error);
-}}
-
 }
 
 module.exports.help = {
