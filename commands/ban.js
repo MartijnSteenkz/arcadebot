@@ -9,8 +9,8 @@ module.exports.run = async (bot, message, args) => {
   if(bUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("Staff are un-banable, you backstabber!");
 
   let banEmbed = new Discord.RichEmbed()
-  .setDescription("Ban")
-  .setColor("#ff0000")
+  .setDescription("User Banned")
+  .setColor("#7493e4")
   .addField(`Terminus smashed ${bUser} with his Ban Hammer!`, `Well, he tried to do it. But he bugged out.`)
   .addField("Reason", bReason)
   .setImage("https://cdn.discordapp.com/attachments/486583639253975042/536615035334819867/ScratchyImpoliteChicken-size_restricted.gif");
