@@ -404,26 +404,6 @@ if(args[0] === 'grey') {
   message.channel.send(removeEmbed);
   memberRoleAdd.removeRole(roleGreyColor).catch(console.error);
 }
-if(args[0] === 'WhiteColor') {
-  if(memberRoleAdd.roles.has(!roleWhiteColor.id)) return message.channel.send(alreadyEmbed);
-  message.channel.send(removeEmbed);
-  memberRoleAdd.removeRole(roleWhiteColor).catch(console.error);
-}
-if(args[0] === 'whitecolor') {
-  if(memberRoleAdd.roles.has(!roleWhiteColor.id)) return message.channel.send(alreadyEmbed);
-  message.channel.send(removeEmbed);
-  memberRoleAdd.removeRole(roleWhiteColor).catch(console.error);
-}
-if(args[0] === 'White') {
-  if(memberRoleAdd.roles.has(!roleWhiteColor.id)) return message.channel.send(alreadyEmbed);
-  message.channel.send(removeEmbed);
-  memberRoleAdd.removeRole(roleWhiteColor).catch(console.error);
-}
-if(args[0] === 'white') {
-  if(memberRoleAdd.roles.has(!roleWhiteColor.id)) return message.channel.send(alreadyEmbed);
-  message.channel.send(removeEmbed);
-  memberRoleAdd.removeRole(roleWhiteColor).catch(console.error);
-}
 }
 
 module.exports.help = {
