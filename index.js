@@ -34,7 +34,7 @@ bot.on("guildMemberAdd", async member => {
   let joinicon = member.user.displayAvatarURL;
   let welcomelogembed = new Discord.RichEmbed()
   .setAuthor("Member Joined", joinicon)
-  .setColor("#faa0eb")
+  .setColor("#97b0f3")
   .setThumbnail(member.user.displayAvatarURL)
   .addField("Username:", `${member} ${member.user.tag}`)
   .setFooter(`ID: ${member.id}`)
@@ -64,7 +64,7 @@ bot.on("channelCreate", async channel => {
   let sicon = channel.guild.iconURL;
   let channelcreatelogsEmbed = new Discord.RichEmbed()
   .setAuthor("Channel Created", sicon)
-  .setColor("#ff00d6")
+  .setColor("#97b0f3")
   .addField("Name:", `${channel}`)
   .setFooter(`ID: ${channel.id}`)
   .setTimestamp(channel.createdAt);
@@ -92,7 +92,7 @@ bot.on("channelPinsUpdate", async (channel, time) => {
   let sicon = channel.guild.iconURL;
   let pinsupdateEmbed = new Discord.RichEmbed()
   .setAuthor("Pin Updated", sicon)
-  .setColor("#9f5a96")
+  .setColor("#97b0f3")
   .addField("Channel:", `${channel}`)
   .setFooter(`ID: ${channel.id}`)
   .setTimestamp(channel.pinnedAt);
@@ -106,7 +106,7 @@ bot.on("channelUpdate", async (oldChannel, newChannel) => {
   let sicon = oldChannel.guild.iconURL;
   let channelupdateEmbed = new Discord.RichEmbed()
   .setAuthor("Channel Updated", sicon)
-  .setColor("#492543")
+  .setColor("#97b0f3")
   .addField("Before:", oldChannel.name, true)
   .addField("After:", newChannel, true)
   .setFooter(`ID: ${newChannel.id}`)
@@ -121,7 +121,7 @@ bot.on("clientUserGuildSettingsUpdate", async clientUserGuildSettings => {
   let sicon = clientUserGuildSettings.guild.iconURL;
   let guildupdateEmbed = new Discord.RichEmbed()
   .setAuthor("Server Updated", sicon)
-  .setColor("#af0e97")
+  .setColor("#97b0f3")
   .addField(`${oldclientUserGuildSettings} -> ${newclientUserGuildSettings}`)
   .setFooter(`ID: ${clientUserGuildSettings.id}`)
   .setTimestamp(clientUserGuildSettings.updatedAt);
@@ -135,7 +135,7 @@ bot.on("emojiCreate", async emoji => {
   let sicon = emoji.guild.iconURL;
   let emojicreateEmbed = new Discord.RichEmbed()
   .setAuthor("Emoji Created", sicon)
-  .setColor("#faa0eb")
+  .setColor("#97b0f3")
   .addField("Name:", emoji.iconURL)
   .setTimestamp(emoji.createdAt);
 
@@ -161,7 +161,7 @@ bot.on("emojiUpdate", async (oldEmoji, newEmoji) => {
   let sicon = newEmoji.guild.iconURL;
   let emojiupdateEmbed = new Discord.RichEmbed()
   .setAuthor("Emoji Updated", sicon)
-  .setColor("#af0e97")
+  .setColor("#97b0f3")
   .addField("Before:", oldEmoji.name)
   .addField("After:", newEmoji.name)
   .setTimestamp(oldEmoji.updatedAt);
@@ -190,7 +190,7 @@ bot.on("guildBanRemove", async (guild, user) => {
   let sicon = guild.iconURL;
   let guildunbanEmbed = new Discord.RichEmbed()
   .setAuthor("Member Unbanned", sicon)
-  .setColor("#faa0eb")
+  .setColor("#97b0f3")
   .setThumbnail(user.displayAvatarURL)
   .addField("Username:", `${user} ${user.tag}`)
   .setFooter(`ID: ${user.id}`)
@@ -205,7 +205,7 @@ bot.on("guildUpdate", async (oldGuild, newGuild) => {
   let sicon = newGuild.iconURL;
   let guildupdateEmbed = new Discord.RichEmbed()
   .setAuthor("Server Updated", sicon)
-  .setColor("#af0e97")
+  .setColor("#97b0f3")
   .setThumbnail(newGuild.iconURL)
   .addField("Before:", oldGuild.name)
   .addField("After:", newGuild.name)
@@ -258,7 +258,7 @@ bot.on("roleCreate", async role => {
   let sicon = role.guild.iconURL;
   let rolecreateEmbed = new Discord.RichEmbed()
   .setAuthor("Role Created", sicon)
-  .setColor("#ff00d6")
+  .setColor("#97b0f3")
   .setThumbnail(role.guild.iconURL)
   .addField("Role Name", role)
   .setFooter(`ID: ${role.id}`)
@@ -288,7 +288,7 @@ bot.on("roleUpdate", async (oldRole, newRole) => {
   let sicon = newRole.guild.iconURL;
   let roleupdateEmbed = new Discord.RichEmbed()
   .setAuthor(`Role Updated`, sicon)
-  .setColor("#ff00d6")
+  .setColor("#97b0f3")
   .setThumbnail(newRole.guild.iconURL)
   .addField("Old Role Name:", oldRole.name)
   .addField("New Role Name:", newRole.name)
