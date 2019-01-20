@@ -3,25 +3,25 @@ const Discord = require("discord.js");
 module.exports.run = async (bot, message, args) => {
 
 let noRoleEmbed = new Discord.RichEmbed()
-.setTitle("❌ Je hebt geen role gekozen")
-.setColor("#da3681")
-.setFooter("Use h!roles to see all available roles");
+.setTitle("❌ You didn't specify a color")
+.setColor("#7493e4")
+.setFooter("Use b!roles to see all available colors");
 
 if(!args[0]) return message.channel.send(noRoleEmbed);
 let question = args.slice(1).join(" ");
 
 let removeEmbed = new Discord.RichEmbed()
-.setTitle(`✔️ Role verwijderd van ${message.author.tag}`)
-.setColor("#da3681");
+.setTitle(`✔️ Color removed from ${message.author.tag}`)
+.setColor("#7493e4");
 
 let alreadyEmbed = new Discord.RichEmbed()
-.setTitle("❌ Je hebt de geselecteerde role niet")
-.setColor("#da3681");
+.setTitle("❌ You don't have that color")
+.setColor("#7493e4");
 
 let wrongRoleEmbed = new Discord.RichEmbed()
-.setTitle("❌ Die role bestaat niet")
-.setColor("#da3681")
-.setFooter("Use h!roles to see all available roles");
+.setTitle("❌ That color doesn't exist")
+.setColor("#7493e4")
+.setFooter("Use b!colors to see all available colors");
 
 let roleCyanColor = message.guild.roles.find(r => r.name === "CyanColor");
 let roleDarkGreenColor = message.guild.roles.find(r => r.name === "DarkGreenColor");
