@@ -5,7 +5,7 @@ module.exports.run = async (bot,messages,args) => {
 
   let sicon = messages.guild.iconURL;
   let colorEmbed = new Discord.RichEmbed()
-  .setColor("#af0e97")
+  .setColor("#7493e4")
   .setThumbnail(sicon)
   .addField("Color Roles", "CyanColor\nLightBlueColor\nBlueColor\nDarkBlueColor\nLightGreenColor\nGreenColor\nDarkGreenColor\nBloodRedColor\nRedColor\nDarkRedColor\nSweetPurpleColor\nPurpleColor\nPinkColor\nBurntOrangeColor\nOrangeColor\nYellowColor\nGreyColor\nBlackColor")
   .setFooter("To add a color, use the command b!add {color}");
