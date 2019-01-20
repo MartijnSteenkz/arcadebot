@@ -49,7 +49,7 @@ bot.on("guildMemberRemove", async member => {
   let joinicon = member.user.displayAvatarURL;
   let leavelogembed = new Discord.RichEmbed()
   .setAuthor("Member Left", joinicon)
-  .setColor("#530447")
+  .setColor("#3a5aaf")
   .setThumbnail(member.user.displayAvatarURL)
   .addField("Username:", `${member} ${member.user.tag}`)
   .setFooter(`ID: ${member.id}`)
@@ -78,7 +78,7 @@ bot.on("channelDelete", async channel => {
   let sicon = channel.guild.iconURL;
   let channeldeletelogsEmbed = new Discord.RichEmbed()
   .setAuthor("Channel Deleted", sicon)
-  .setColor("#3b0534")
+  .setColor("#3a5aaf")
   .addField("Name:", `#${channel.name}`)
   .setFooter(`ID: ${channel.id}`)
   .setTimestamp(channel.deletedAt);
@@ -148,7 +148,7 @@ bot.on("emojiDelete", async emoji => {
   let sicon = emoji.guild.iconURL;
   let emojideleteEmbed = new Discord.RichEmbed()
   .setAuthor("Emoji Deleted", sicon)
-  .setColor("#530447")
+  .setColor("#3a5aaf")
   .addField("Name:", emoji)
   .setTimestamp(emoji.deletedAt);
 
@@ -175,7 +175,7 @@ bot.on("guildBanAdd", async (guild, user) => {
   let sicon = guild.iconURL;
   let guildbanEmbed = new Discord.RichEmbed()
   .setAuthor("Member Banned", sicon)
-  .setColor("#530447")
+  .setColor("#3a5aaf")
   .setThumbnail(user.displayAvatarURL)
   .addField("Username:", `${user} ${user.tag}`)
   .setFooter(`ID: ${user.id}`)
@@ -221,7 +221,7 @@ bot.on("messageDelete", async message => {
   let sicon = message.author.displayAvatarURL;
   let messagedeleteEmbed = new Discord.RichEmbed()
   .setAuthor(`Deleted Message by ${message.author.username}`, sicon)
-  .setColor("#530447")
+  .setColor("#3a5aaf")
   .setThumbnail(message.author.displayAvatarURL)
   .setDescription(`Deleted in channel ${message.channel}`)
   .addField("Message:", message)
@@ -240,7 +240,7 @@ bot.on("messageUpdate", async (oldMessage, newMessage) => {
   let sicon = newMessage.author.displayAvatarURL;
   let messageupdateEmbed = new Discord.RichEmbed()
   .setAuthor(`Message Edited by ${newMessage.author.username}`, sicon)
-  .setColor("#530447")
+  .setColor("#3a5aaf")
   .setThumbnail(newMessage.author.displayAvatarURL)
   .setDescription(`Edited in channel ${newMessage.channel}`)
   .addField("Before:", oldMessage)
@@ -273,7 +273,7 @@ bot.on("roleDelete", async role => {
   let sicon = role.guild.iconURL;
   let roledeleteEmbed = new Discord.RichEmbed()
   .setAuthor(`Role Deleted`, sicon)
-  .setColor("#ff00d6")
+  .setColor("#3a5aaf")
   .setThumbnail(role.guild.iconURL)
   .addField("Role Name", role)
   .setFooter(`ID: ${role.id}`)
