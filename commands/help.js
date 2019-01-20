@@ -25,6 +25,7 @@ module.exports.run = async (bot, message, args) => {
   .addField("b!userinfo", "information about a user")
   .addField("b!invite", "shows all available invites to the Hentai World")
   .addField("b!staff", "shows all current staff members")
+  .addField("b!colors", "shows all available colors that you can add")
   .addField("b!ping", "shows the response time of Hanayuri");
 
   let funembed = new Discord.RichEmbed()
@@ -39,7 +40,9 @@ module.exports.run = async (bot, message, args) => {
   .setDescription("Others Command List")
   .setColor("#7493e4")
   .setThumbnail("https://cdn.discordapp.com/attachments/486583639253975042/536621876366278657/LeeshaHannigan_Paladins.png")
-  .addField("b!report", "report someone in the server");
+  .addField("b!report", "report someone in the server")
+  .addField("b!add", "add a color to yourself")
+  .addField("b!remove", "remove a color from yourself");
 
   let staffhelpembed = new Discord.RichEmbed()
   .setDescription("Staff Command List")
