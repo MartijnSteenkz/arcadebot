@@ -5,7 +5,7 @@ module.exports.run = async (bot,messages,args) => {
 
   let response = await superagent.get(`http://aws.random.cat//meow`);
   let dogembed = new Discord.RichEmbed()
-  .setColor("#da3681")
+  .setColor("#7493e4")
   .setTitle("Cat :cat:")
   .setImage(response.body.file);
 
