@@ -18,7 +18,7 @@ module.exports.run = async (bot, message, args) => {
         .addField("Region", message.guild.region)
         .addField("Total Roles", message.guild.roles.size)
         .addField("Total Channels", message.guild.channels.size)
-        .addField("Invite Link", "https://discord.gg/xj8VCV2");
+        .addField("Invite Link", "https://discord.gg/nf6wBFT");
 
         message.channel.send(serverembed);
 
