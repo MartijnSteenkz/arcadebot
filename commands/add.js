@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
 
 let noRoleEmbed = new Discord.RichEmbed()
 .setTitle("❌ You didn't specify a color")
-.setColor("#da3681")
+.setColor("#7493e4")
 .setFooter("Use b!colors to see all available colors");
 
 if(!args[0]) return message.channel.send(noRoleEmbed);
@@ -12,15 +12,15 @@ let question = args.slice(1).join(" ");
 
 let addEmbed = new Discord.RichEmbed()
 .setTitle(`✔️ Color added to ${message.author.tag}`)
-.setColor("#da3681");
+.setColor("#7493e4");
 
 let alreadyEmbed = new Discord.RichEmbed()
 .setTitle("❌ You already have that color")
-.setColor("#da3681");
+.setColor("#7493e4");
 
 let wrongRoleEmbed = new Discord.RichEmbed()
 .setTitle("❌ That color doesnt exist")
-.setColor("#da3681")
+.setColor("#7493e4")
 .setFooter("Use b!roles to see all available colors");
 
 let roleCyanColor = message.guild.roles.find(r => r.name === "CyanColor");
