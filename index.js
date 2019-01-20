@@ -92,7 +92,7 @@ bot.on("channelPinsUpdate", async (channel, time) => {
   let sicon = channel.guild.iconURL;
   let pinsupdateEmbed = new Discord.RichEmbed()
   .setAuthor("Pin Updated", sicon)
-  .setColor("#97b0f3")
+  .setColor("#7493e4")
   .addField("Channel:", `${channel}`)
   .setFooter(`ID: ${channel.id}`)
   .setTimestamp(channel.pinnedAt);
@@ -106,7 +106,7 @@ bot.on("channelUpdate", async (oldChannel, newChannel) => {
   let sicon = oldChannel.guild.iconURL;
   let channelupdateEmbed = new Discord.RichEmbed()
   .setAuthor("Channel Updated", sicon)
-  .setColor("#97b0f3")
+  .setColor("#7493e4")
   .addField("Before:", oldChannel.name, true)
   .addField("After:", newChannel, true)
   .setFooter(`ID: ${newChannel.id}`)
@@ -121,7 +121,7 @@ bot.on("clientUserGuildSettingsUpdate", async clientUserGuildSettings => {
   let sicon = clientUserGuildSettings.guild.iconURL;
   let guildupdateEmbed = new Discord.RichEmbed()
   .setAuthor("Server Updated", sicon)
-  .setColor("#97b0f3")
+  .setColor("#7493e4")
   .addField(`${oldclientUserGuildSettings} -> ${newclientUserGuildSettings}`)
   .setFooter(`ID: ${clientUserGuildSettings.id}`)
   .setTimestamp(clientUserGuildSettings.updatedAt);
@@ -161,7 +161,7 @@ bot.on("emojiUpdate", async (oldEmoji, newEmoji) => {
   let sicon = newEmoji.guild.iconURL;
   let emojiupdateEmbed = new Discord.RichEmbed()
   .setAuthor("Emoji Updated", sicon)
-  .setColor("#97b0f3")
+  .setColor("#7493e4")
   .addField("Before:", oldEmoji.name)
   .addField("After:", newEmoji.name)
   .setTimestamp(oldEmoji.updatedAt);
@@ -205,7 +205,7 @@ bot.on("guildUpdate", async (oldGuild, newGuild) => {
   let sicon = newGuild.iconURL;
   let guildupdateEmbed = new Discord.RichEmbed()
   .setAuthor("Server Updated", sicon)
-  .setColor("#97b0f3")
+  .setColor("#7493e4")
   .setThumbnail(newGuild.iconURL)
   .addField("Before:", oldGuild.name)
   .addField("After:", newGuild.name)
@@ -288,7 +288,7 @@ bot.on("roleUpdate", async (oldRole, newRole) => {
   let sicon = newRole.guild.iconURL;
   let roleupdateEmbed = new Discord.RichEmbed()
   .setAuthor(`Role Updated`, sicon)
-  .setColor("#97b0f3")
+  .setColor("#7493e4")
   .setThumbnail(newRole.guild.iconURL)
   .addField("Old Role Name:", oldRole.name)
   .addField("New Role Name:", newRole.name)
