@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
     let rounded = ping / 1000
 
     let pingembed = new Discord.RichEmbed()
-    .setColor("#da3681")
+    .setColor("#7493e4")
     .addField(":ping_pong: Pong!", `${ping} ms | ${rounded} seconds.`);
 
     message.channel.send(pingembed);
