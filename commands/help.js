@@ -45,7 +45,7 @@ module.exports.run = async (bot, message, args) => {
   .setDescription("Staff Command List")
   .setColor("#7493e4")
   .setThumbnail("https://cdn.discordapp.com/attachments/486583639253975042/536621996860243969/unknown.png")
-  .addField("b!say", "let Hanayuri say something")
+  .addField("b!say", "let Buck say something")
   .addField("b!clear", "delete an ammount of messages in the chat")
   .addField("b!addrole", "give someone a role")
   .addField("b!removerole", "remove a role from someone")
