@@ -40,9 +40,10 @@ module.exports.run = async (bot, message, args) => {
   .setDescription("Others Command List")
   .setColor("#7493e4")
   .setThumbnail("https://cdn.discordapp.com/attachments/486583639253975042/536621876366278657/LeeshaHannigan_Paladins.png")
-  .addField("b!report", "report someone in the server")
   .addField("b!add", "add a color to yourself")
-  .addField("b!remove", "remove a color from yourself");
+  .addField("b!remove", "remove a color from yourself")
+  .addField("b!report", "report someone in the server")
+  .addField("b!avatar", "get the avatar of a member in a URL");
 
   let staffhelpembed = new Discord.RichEmbed()
   .setDescription("Staff Command List")
@@ -50,6 +51,7 @@ module.exports.run = async (bot, message, args) => {
   .setThumbnail("https://cdn.discordapp.com/attachments/486583639253975042/536621996860243969/unknown.png")
   .addField("b!say", "let Buck say something")
   .addField("b!clear", "delete an ammount of messages in the chat")
+  .addField("b!prefix", "change the prefix of Buck Bot")
   .addField("b!addrole", "give someone a role")
   .addField("b!removerole", "remove a role from someone")
   .addField("b!warn", "warns someone. The more warnings, the bigger the punishment")
