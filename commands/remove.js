@@ -42,7 +42,6 @@ let roleYellowColor = message.guild.roles.find(r => r.name === "YellowColor");
 let roleBlackColor = message.guild.roles.find(r => r.name === "BlackColor");
 let roleGreyColor = message.guild.roles.find(r => r.name === "GreyColor");
 let roleWhiteColor = message.guild.roles.find(r => r.name === "WhiteColor");
-let roleLevelBlock = message.guild.roles.find(r => r.name === "Level Block");
 let memberRoleAdd = message.member;
 
 if(args[0] === 'cyancolor') {
@@ -425,20 +424,6 @@ if(args[0] === 'white') {
   message.channel.send(removeEmbed);
   memberRoleAdd.removeRole(roleWhiteColor).catch(console.error);
 }
-if(args[0] === 'Level') {
-  if (!args[1]) return;
-  if (args[1] === 'Block') {
-  if(memberRoleAdd.roles.has(!roleLevelBlock.id)) return message.channel.send(alreadyEmbed);
-  message.channel.send(removeEmbed);
-  memberRoleAdd.removeRole(roleLevelBlock).catch(console.error);
-}}
-if(args[0] === 'level') {
-  if (!args[1]) return;
-  if (args[1] === 'block') {
-  if(memberRoleAdd.roles.has(!roleLevelBlock.id)) return message.channel.send(alreadyEmbed);
-  message.channel.send(removeEmbed);
-  memberRoleAdd.removeRole(roleLevelBlock).catch(console.error);
-}};
 }
 
 module.exports.help = {
