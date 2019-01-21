@@ -46,6 +46,7 @@ let memberRoleAdd = message.member;
 
 if(args[0] === 'cyancolor') {
   if(memberRoleAdd.roles.has(roleCyanColor.id)) return message.channel.send(alreadyEmbed);
+  if(memberRoleAdd.roles.has(roleDarkGreenColor.id, roleGreenColor.id, roleLightGreenColor.id, roleDarkBlueColor.id, roleBlueColor.id, roleLightBlueColor.id)) memberRoleAdd.removeRole(roleDarkGreenColor, roleGreenColor, roleLightGreenColor, roleDarkBlueColor, roleBlueColor, roleLightBlueColor).catch(console.error);  
   message.channel.send(addEmbed);
   memberRoleAdd.addRole(roleCyanColor).catch(console.error);
 }
